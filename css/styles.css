@@ -1,0 +1,278 @@
+/* BODY */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  ;
+}
+
+body {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='40' viewBox='0 0 50 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%230b0188' fill-opacity='0.4'%3E%3Cpath d='M40 10L36.67 0h-2.11l3.33 10H20l-2.28 6.84L12.11 0H10l6.67 20H10l-2.28 6.84L2.11 10 5.44 0h-2.1L0 10l6.67 20-3.34 10h2.11l2.28-6.84L10 40h20l2.28-6.84L34.56 40h2.1l-3.33-10H40l2.28-6.84L47.89 40H50l-6.67-20L50 0h-2.1l-5.62 16.84L40 10zm1.23 10l-2.28-6.84L34 28h4.56l2.67-8zm-10.67 8l-2-6h-9.12l2 6h9.12zm-12.84-4.84L12.77 38h15.79l2.67-8H20l-2.28-6.84zM18.77 20H30l2.28 6.84L37.23 12H21.44l-2.67 8zm-7.33 2H16l-4.95 14.84L8.77 30l2.67-8z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* NAVIGATION */
+.nav-main {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  padding: 20px 0;
+}
+
+.nav-brand {
+  width: 70px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+hr {
+  margin: 10px 0 15px 0;
+}
+
+/* NAV-CENTER */
+.nav-main ul {
+  display: flex;
+}
+
+.nav-main ul li {
+  padding: 10px;
+}
+
+.nav-main ul li a {
+  padding: 5px;
+}
+
+.nav-main ul li a:hover {
+  border-bottom: 2px solid #ffffff;
+}
+
+.nav-main ul.nav-menu-right {
+  margin-right: 40px;
+}
+
+.menu-btn {
+  position: absolute;
+  cursor: pointer;
+  top: 15px;
+  right: 30px;
+  display: none;
+}
+
+/* SHOWCASE */
+.showcase {
+  width: 100%;
+  height: 550px;
+  background: url("../img/showcase2.jpg") no-repeat center center/cover;
+  padding: 50px;
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.showcase h2 {
+  margin-bottom: 10px;
+}
+
+.showcase p {
+  margin-bottom: 10px;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: darkblue;
+  columns: #ffffff;
+  font-size: 20px;
+  border: solid 1px darkblue;
+  margin: 10px 0;
+  color: #ffffff;
+}
+
+.btn:hover {
+  border-color: #ffffff;
+}
+
+/* NEW CARDS */
+.new-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  margin: 10px 0;
+}
+
+.new-cards img {
+  width: 100%;
+  height: 180px;
+}
+
+.new-cards h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.new-cards a {
+  padding: 10px 0;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.new-cards a:hover {
+  text-decoration: underline;
+}
+
+/* BANNER SUBSCRIPTION */
+.banner-susbcription {
+  width: 100%;
+  height: 350px;
+  background: url("../img/tech-red.jpg") no-repeat center center/cover;
+  margin-bottom: 30px;
+}
+
+.banner-susbcription .content {
+  width: 40%;
+  padding: 90px 0 0 30px;
+  color: white;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+.banner-susbcription h2 {
+  margin: 10px 0 20 0;
+}
+
+.banner-susbcription p {
+  margin: 10px 0 20 0;
+}
+
+/* SOCIAL */
+.social {
+  margin: 50px 0;
+}
+
+.social p {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.links a {
+  margin: 0 30px;
+}
+
+.links a i {
+  font-size: 3rem;
+}
+
+/* FOOTER */
+footer {
+
+  color: darkgray;
+  font-size: 15px;
+  background-color: navy;
+  justify-content: center;
+  display: flex;
+  padding: 15px;
+}
+
+/* SHOWCASE COMPLETO */
+.img-inicio {
+  width: 650px;
+  height: 400px;
+  max-width: 100%;
+  padding-top: 0.5rem;
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: repeat(1, 2fr);
+  column-gap: 3rem;
+}
+
+/* FORMULARIO */
+.form-subs {
+  width: 500px;
+  background-color: rgb(7, 7, 36);
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  border-radius: 4px;
+  border: solid 2px #ffffff;
+}
+
+.form-subs h2 {
+  margin-bottom: 10px;
+}
+
+.controls {
+  width: 100%;
+  padding: 10px;
+  background-color: navy;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: solid 1px #000000;
+}
+
+@media(max-width: 1024px) {
+  .nav-main ul.nav-menu {
+    display: block;
+    position: absolute;
+    background-color: navy;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    height: 100%;
+    opacity: .8;
+    transform: translateX(-400px);
+    transition: transform .5s ease-in-out;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .nav-main ul.nav-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .nav-main ul.nav-menu li {
+    padding: 12px;
+    font-size: 20px;
+  }
+
+  .new-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .banner-susbcription .content {
+    width: 80%;
+  }
+}

@@ -1,0 +1,10 @@
+Buenas tardes profesor. Le dejo estas notas sobre la pagina.
+La temática es una pagina de noticias tecnológicas.
+
+/-----------------------/
+Animación:
+se encuentra en los botones principales con el hover y en el menu al cambiar la resolución.
+
+/-----------------------/
+Páginas:
+Solo hice un  main, una pagina para el anuncio principal y en la de suscripción para poder contener el formulario.
