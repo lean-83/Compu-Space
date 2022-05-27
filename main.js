@@ -41,4 +41,13 @@ ScrollReveal().reveal('.footer-container', { delay: 500 });
 ScrollReveal().reveal('.contenedor-grid', { delay: 500 });
 ScrollReveal().reveal('.form-subs', { delay: 500 });
 
+//Carrusel
+var counter = 1;
+setInterval(function () {
+    document.getElementById('radio' + counter).checked = true;
+    counter++;
+    if (counter > 4) {
+        counter = 1;
+    }
+}, 500);
 
