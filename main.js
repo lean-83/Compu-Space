@@ -1,31 +1,28 @@
 //Captura de datos;
-function captura() {
-    var nombre = document.getElementById("nombres").value;
-    var apellido = document.getElementById("apellido").value;
-    var correo = document.getElementById("correo").value;
-    var telefono = document.getElementById("telefono").value;
-    if (nombre == "") {
-        alert("El nombre es obligatorio");
-        document.getElementById("nombres").focus();
-    }
-    else {
-        if (correo == "") {
-            alert("El correo es obligatorio");
-            document.getElementById("correo").focus();
-        }
-        else {
-            document.getElementById("nombres").value = "";
-            document.getElementById("apellido").value = "";
-            document.getElementById("correo").value = "";
-            document.getElementById("telefono").value = "";
-            document.getElementById("nombres").focus();
-            alert("SUSCRIPCIÓN EXITOSA!!!")
-        }
-    }
+document.getElementById('formulario').addEventListener('submit', function (e) {
+    e.preventDefault();
+    let formulario = new FormData(document.getElementById('formulario'));
+    fetch('registrar.php', {
+        method: 'POST',
+        body: formulario
+    })
+        .then(res => res.json())
+        .then(data => {
+            if (data == 'true') {
+                document.getElementById('txt_nombre').value = '';
+                document.getElementById('txt_apellido').value = '';
+                document.getElementById('txt_mail').value = '';
+                document.getElementById('txt_telefono').value = '';
+                alert('Registro Correcto!!!')
+            } else {
+                console.log(data);
+            }
+        })
+});
 
-}
+
+
 //alert("Gracias por su suscripción")
-
 
 //Movimiento del menú
 document.querySelector('.menu-btn').addEventListener('click', () => {
@@ -42,12 +39,12 @@ ScrollReveal().reveal('.contenedor-grid', { delay: 500 });
 ScrollReveal().reveal('.form-subs', { delay: 500 });
 
 //Carrusel
-var counter = 1;
+/*var counter = 1;
 setInterval(function () {
     document.getElementById('radio' + counter).checked = true;
     counter++;
     if (counter > 4) {
         counter = 1;
     }
-}, 500);
+}, 500);*/
 
